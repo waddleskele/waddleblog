@@ -1,0 +1,282 @@
+<html>
+<head>
+<style>
+<!--
+body {
+background-color: white;
+background-image: url(manyfish.jpg);
+background-size: 25%;
+background-repeat: yes-repeat;
+background-attachment: fixed;
+}
+
+a {
+	opacity: 1.0;
+}
+
+a:hover {
+	opacity: 1.0;
+}
+//-->
+
+</style>
+
+</head>
+
+<table style="background: rgba(52, 42, 50, 1.0); border: 0px dotted black; border-radius: 0px; padding: 10px; width: 100%;">
+<tr>
+<td>
+
+<p align="Middle">
+<font face="courier new" color="649466" size="6">
+<b><a href="index.html" style="color:649466">blog</a></b>
+</font>
+&nbsp;&nbsp;&nbsp;
+<font face="courier new" color="649466" size="6">
+<b><a href="comic.html" style="color:649466" >comic</a></b>
+</font>
+&nbsp;&nbsp;&nbsp;
+<font face="courier new" color="649466" size="6">
+<b><a style="color:445044"><u>music</u></a></b>
+</font>
+
+</table>
+
+<marquee behavior="scroll" direction="left" scrollamount="25">
+<img src="amogus dance.gif">
+</marquee>
+
+<p align="middle">
+
+<table style="background: rgba(90, 149, 102, 1.0); border: 0px dotted black; border-radius: 0px; padding: 10px; width: 70%;">
+<tr>
+<td>
+<p align="center">
+<img src="music.gif" width="388" height="204">
+<p align="center">
+<hr color="342a32" size="5">
+<p align="left">
+<p align="left">
+<font face="courier new" color="342a32" size="5">
+<b>
+heres some shit i made a couple weeks ago fucking around in flstudio. when i add more music itll go above this on the page
+</b>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1458998839&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #342a32;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-830528056" title="waddleskele" target="_blank" style="color: #342a32; text-decoration: none;">waddleskele</a> · <a href="https://soundcloud.com/user-830528056/hyper-zone-2-with-an-amen-break-slapped-over-it" title="hyper zone 2 with an amen break slapped over it" target="_blank" style="color: #342a32; text-decoration: none;">hyper zone 2 with an amen break slapped over it</a></div>
+<br>
+<hr color="342a32" size="5">
+<br>
+</table>
+
+<br><br>
+<br><br>
+<font face="arial" color="white" size="4">
+</font>
+<script>
+
+
+
+/******************************************
+
+* Cross browser cursor trailer script- By Brian Caputo (bcaputo@icdc.com)
+
+* Visit Dynamic Drive (http://www.dynamicdrive.com/) for full source code
+
+* Modified Dec 30th, 02' by DD. This notice must stay intact for use
+
+******************************************/
+
+
+
+A=document.getElementById
+
+B=document.all;
+
+C=document.layers;
+
+T1=new Array("3dguh.png",38,35,"epic.png",30,31,"colonthree.png",28,26)
+
+
+
+var offsetx=15 //x offset of trail from mouse pointer
+
+var offsety=10 //y offset of trail from mouse pointer
+
+
+
+nos=parseInt(T1.length/3)
+
+rate=50
+
+ie5fix1=0;
+
+ie5fix2=0;
+
+rightedge=B? document.body.clientWidth-T1[1] : window.innerWidth-T1[1]-20
+
+bottomedge=B? document.body.scrollTop+document.body.clientHeight-T1[2] : window.pageYOffset+window.innerHeight-T1[2]
+
+
+
+for (i=0;i<nos;i++){
+
+createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+" height="+T1[(i*3+2)]+" border=0>")
+
+}
+
+
+
+function createContainer(N,Xp,Yp,W,H,At,HT,Op,St){
+
+with (document){
+
+write((!A && !B) ? "<layer id='"+N+"' left="+Xp+" top="+Yp+" width="+W+" height="+H : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"; top:"+Yp+"; width:"+W+"; height:"+H+"; ");
+
+if(St){
+
+if (C)
+
+write(" style='");
+
+write(St+";' ")
+
+}
+
+else write((A || B)?"'":"");
+
+write((At)? At+">" : ">");
+
+write((HT) ? HT : "");
+
+if (!Op)
+
+closeContainer(N)
+
+}
+
+}
+
+
+
+function closeContainer(){
+
+document.write((A || B)?"</div>":"</layer>")
+
+}
+
+
+
+function getXpos(N){
+
+if (A)
+
+return parseInt(document.getElementById(N).style.left)
+
+else if (B)
+
+return parseInt(B[N].style.left)
+
+else
+
+return C[N].left
+
+}
+
+
+
+function getYpos(N){
+
+if (A)
+
+return parseInt(document.getElementById(N).style.top)
+
+else if (B)
+
+return parseInt(B[N].style.top)
+
+else
+
+return C[N].top
+
+}
+
+
+
+function moveContainer(N,DX,DY){
+
+c=(A)? document.getElementById(N).style : (B)? B[N].style : (C)? C[N] : "";
+
+if (!B){
+
+rightedge=window.innerWidth-T1[1]-20
+
+bottomedge=window.pageYOffset+window.innerHeight-T1[2]
+
+}
+
+c.left=Math.min(rightedge, DX+offsetx) + 'px';
+
+c.top=Math.min(bottomedge, DY+offsety) + 'px';
+
+}
+
+function cycle(){
+
+//if (IE5) 
+
+if (document.all&&window.print){
+
+ie5fix1=document.body.scrollLeft;
+
+ie5fix2=document.body.scrollTop;
+
+}
+
+for (i=0;i<(nos-1);i++){
+
+moveContainer("CUR"+i,getXpos("CUR"+(i+1)),getYpos("CUR"+(i+1)))
+
+}
+
+}
+
+
+
+function newPos(e){
+
+moveContainer("CUR"+(nos-1),(B)?event.clientX+ie5fix1:e.pageX+2,(B)?event.clientY+ie5fix2:e.pageY+2)
+
+}
+
+
+
+function getedgesIE(){
+
+rightedge=document.body.clientWidth-T1[1]
+
+bottomedge=document.body.scrollHeight-T1[2]
+
+}
+
+
+
+if (B){
+
+window.onload=getedgesIE
+
+window.onresize=getedgesIE
+
+}
+
+
+
+if(document.layers)
+
+document.captureEvents(Event.MOUSEMOVE)
+
+document.onmousemove=newPos
+
+setInterval("cycle()",rate)
+
+</script>
+</body>
+</html>
