@@ -2,20 +2,13 @@
 <head>
 <style>
 <!--
-body {
-background-color: white;
-background-image: url(MmmmmYYDADGHmmmYAGGGHHmmmmYAGGHmmmmYAGHHmmmmYAGGHHmmmmYQGHHJmmmmYAghhhmmmYAGGHHHHmmmYAGHHHmmmYAGGHHm.gif);
-background-size: 25%;
-background-repeat: yes-repeat;
-background-attachment: fixed;
-}
 
-a {
-	opacity: 1.0;
-}
-
-a:hover {
-	opacity: 1.0;
+html { 
+  background: url(MmmmmYYDADGHmmmYAGGGH.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 //-->
         body {
@@ -157,7 +150,26 @@ a:hover {
                 -webkit-background-clip: text;
             }
         }
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0px solid #000000;
+}
+
+.image2 {
+  position: absolute;
+  align: center;
+  top: 0px;
+  left: 0px;
+  border: 0px solid #000000;
+}
 </style>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -199,18 +211,13 @@ a:hover {
 </table>
 
 
-<br><br>
-
-<p align="middle">
-
-<table style="background: rgba(0, 0, 0, 0); border: 0px dotted black; border-radius: 0px; padding: 10px; width: 70%;">
-<tr>
-<td>
 <p align="center">
-<img src="pikachu.gif" height="233" width="400">
+<div class="parent" align="center">
+  <img class="image1" src="awesomesauce.png" height="270" width="900">
+  <img class="image2" src="giflogonogreen.gif" height="270" width="900" align="center">
+</div>
 
 <br>
-</table>
 
 <br><br>
 <br><br>
