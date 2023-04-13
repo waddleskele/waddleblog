@@ -170,9 +170,82 @@ html {
   left: 0px;
   border: 0px solid #000000;
 }
+.collapsible {
+  background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(9, 1, 30, 0.4));
+  border: 2px solid rgba(9, 1, 30, 1);
+  margin-left: 3%;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 18px;
+  width: 41%;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  border-radius: 30px;
+  width: 65%;
+  margin-left: 3%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in;
+  background-color: rgba(25, 255, 163, 0.3);
+  font-size: 21px;
+  font-family: Courier New;
+  color: white
+}
+
+.schmollapsible {
+  background: rgba(0, 0, 0, 0);
+  margin-left: 3%;
+  border-radius: 0px;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  width: 0%;
+  height: 0%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0px;
+}
+
+.active, .schmollapsible:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.fleega {
+  
+}
+.flooga {
+  position: absolute;
+  top: 28.5%;
+  left: 0;
+}
+.flooga2 {
+  position: absolute;
+  top: 29%;
+  left: 5%;
+}
+
 </style>
+<script type="text/javascript" src="sound-onclick.js"></script>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+ <script type="text/javascript">
+
+        function picture(){ 
+        var pic = "https://i.imgur.com/sivVPjA.gif"
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+
+        }
+
+
+    </script>
 </head>
 <body>
 
@@ -199,8 +272,8 @@ html {
 <b><a href="art.html" style="color:white">art</a></b>
 </font>
 &nbsp;&nbsp;&nbsp;
-<font face="courier new" color="5f2d25" size="6">
-<b><a style="color:5f2d25"><u>sauce...</u></a></b>
+<font face="courier new" color="#3f0f42" size="6">
+<b><a style="color:#3f0f42"><u>sauce...</u></a></b>
 &nbsp;&nbsp;&nbsp;
 </font>
 </p>
@@ -214,11 +287,118 @@ html {
   <img class="image1" src="https://i.imgur.com/ZPVkzIR.png" height="270" width="900">
   <img class="image2" src="https://i.imgur.com/OUurPMd.gif" height="270" width="900" align="center">
 </div>
-
+</p>
 <br>
 
 <br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<div class='fleega'>
+<div class='flooga'>
+<p align="left">
+<br>
+<table style="background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(255, 0, 0, 0.4)); border: 2px solid rgba(9, 1, 30, 1); width: 4.5%; table-layout: fixed; margin-left: 2%; border-radius: 50px; overflow: hidden;">
+<tr><td>
+<p align="center">
 <br><br>
+<a href="index.html"><img src="https://i.imgur.com/GADnCG0.gif" height="90%" width="90%"></a>
+<br><br><br>
+ <a onclick="alert('ee male');" target="_blank">
+    <img src="https://i.imgur.com/Bfn4Am7.gif" width="90%" height="90%">
+    </img>
+</a>
+<br><br><br>
+
+<a href="javascript:playclip();">
+<img src="https://i.imgur.com/y8j6oM0.gif" width="80%" height="80%" border="0">
+</a>
+<audio>
+<source src="hamburger.mp3" type="audio/mp3">
+</audio>
+
+ <br><br><br>
+ <a onclick="alert('mama mia my namea linguini');" target="_blank">
+    <img src="https://i.imgur.com/mHWy2TE.gif" width="70%" height="70%">
+    </img>
+</a>
+<br><br><br>
+<a href="https://youtu.be/ywthKNqI7uI"><img src="https://i.imgur.com/2gHy0A1.gif" height="90%" width="90%"></a>
+<br><br><br><br>
+<img id="bigpic" src="https://i.imgur.com/OoywNEF.gif" onclick="picture()" height="90%" width="90%"/>
+<br><br><br><br>
+<img src="https://i.imgur.com/YLG45Q5.gif" onmouseover="this.src='https://i.imgur.com/tdCpo5X.gif'" onmouseout="this.src='https://i.imgur.com/YLG45Q5.gif'" width="90%" height="90%" />
+<br><br><br>
+</p>
+</tr></td>
+</table>
+</p>
+</div>
+
+
+<div class='flooga2'>
+<p align="left">
+<button class="schmollapsible"></button>
+<div class="content">
+  <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b></p>
+</div>
+
+
+<button class="collapsible"><font face="courier new" size="5" color="white"><b>sauces</b></font></button>
+<div class="content">
+  <p><b>coming soon</b></p>
+</div>
+<br>
+
+<button class="collapsible"><font face="courier new" size="5" color="white"><b>dubiously sauces (schrodingers sauce)</b></font></button>
+<div class="content">
+  <p><b>coming soon</b></p>
+</div>
+<br>
+
+<button class="collapsible"><font face="courier new" size="5" color="white"><b>tierlist</b></font></button>
+<div class="content">
+  <p><b>coming soon</b></p>
+</div>
+<br>
+
+</p>
+</div>
+
+<br>
+<br>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 
