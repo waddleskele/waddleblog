@@ -332,6 +332,125 @@ a:active {
 ::selection {
   background: #ff0000;
 }
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "alaska . . . . . . . . . maine"
+    ". . . . . wisconsin . . . vermont new-hampshire"
+    "washington idaho montana north-dakota MINNESOTA illinois michigan . new-york massachusetts ."
+    "oregon nevada wyoming south-dakota iowa indiana ohio pennsylvania new-jersey connecticut rhode-island"
+    "california utah colorado nebraska missouri kentucky west-virginia virginia maryland delaware ."
+    ". arizona NEW-MEXICO kansas arkansas tennessee north-carolina south-carolina dcquestionmark . ."
+    ". . . oklahoma louisianna mississippi alabama georgia . . ."
+    ". . . texas . . . . florida . ."
+    "hawaii . . . . . . . . . .";
+}
+
+.alaska { grid-area: alaska; }
+
+.washington { grid-area: washington; }
+
+.oregon { grid-area: oregon; }
+
+.california { grid-area: california; }
+
+.idaho { grid-area: idaho; }
+
+.nevada { grid-area: nevada; }
+
+.utah { grid-area: utah; }
+
+.arizona { grid-area: arizona; }
+
+.montana { grid-area: montana; }
+
+.wyoming { grid-area: wyoming; }
+
+.colorado { grid-area: colorado; }
+
+.NEW-MEXICO { grid-area: NEW-MEXICO; }
+
+.north-dakota { grid-area: north-dakota; }
+
+.south-dakota { grid-area: south-dakota; }
+
+.nebraska { grid-area: nebraska; }
+
+.kansas { grid-area: kansas; }
+
+.oklahoma { grid-area: oklahoma; }
+
+.texas { grid-area: texas; }
+
+.MINNESOTA { grid-area: MINNESOTA; }
+
+.iowa { grid-area: iowa; }
+
+.missouri { grid-area: missouri; }
+
+.arkansas { grid-area: arkansas; }
+
+.louisianna { grid-area: louisianna; }
+
+.wisconsin { grid-area: wisconsin; }
+
+.illinois { grid-area: illinois; }
+
+.indiana { grid-area: indiana; }
+
+.kentucky { grid-area: kentucky; }
+
+.tennessee { grid-area: tennessee; }
+
+.mississippi { grid-area: mississippi; }
+
+.alabama { grid-area: alabama; }
+
+.north-carolina { grid-area: north-carolina; }
+
+.west-virginia { grid-area: west-virginia; }
+
+.ohio { grid-area: ohio; }
+
+.michigan { grid-area: michigan; }
+
+.pennsylvania { grid-area: pennsylvania; }
+
+.virginia { grid-area: virginia; }
+
+.south-carolina { grid-area: south-carolina; }
+
+.georgia { grid-area: georgia; }
+
+.florida { grid-area: florida; }
+
+.maryland { grid-area: maryland; }
+
+.dcquestionmark { grid-area: dcquestionmark; }
+
+.new-jersey { grid-area: new-jersey; }
+
+.new-york { grid-area: new-york; }
+
+.massachusetts { grid-area: massachusetts; }
+
+.connecticut { grid-area: connecticut; }
+
+.delaware { grid-area: delaware; }
+
+.vermont { grid-area: vermont; }
+
+.new-hampshire { grid-area: new-hampshire; }
+
+.maine { grid-area: maine; }
+
+.rhode-island { grid-area: rhode-island; }
+
+.hawaii { grid-area: hawaii; }
+
 </style>
 <script type="text/javascript" src="sound-onclick.js"></script>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -1609,7 +1728,59 @@ ___________.________________________.____    .___  ____________________
 <br>
 <br>
 
-
+<div class="container">
+  <div class="alaska"></div>
+  <div class="washington"></div>
+  <div class="oregon"></div>
+  <div class="california"></div>
+  <div class="idaho"></div>
+  <div class="nevada"></div>
+  <div class="utah"></div>
+  <div class="arizona"></div>
+  <div class="montana"></div>
+  <div class="wyoming"></div>
+  <div class="colorado"></div>
+  <div class="NEW-MEXICO"></div>
+  <div class="north-dakota"></div>
+  <div class="south-dakota"></div>
+  <div class="nebraska"></div>
+  <div class="kansas"></div>
+  <div class="oklahoma"></div>
+  <div class="texas"></div>
+  <div class="MINNESOTA"></div>
+  <div class="iowa"></div>
+  <div class="missouri"></div>
+  <div class="arkansas"></div>
+  <div class="louisianna"></div>
+  <div class="wisconsin"></div>
+  <div class="illinois"></div>
+  <div class="indiana"></div>
+  <div class="kentucky"></div>
+  <div class="tennessee"></div>
+  <div class="mississippi"></div>
+  <div class="alabama"></div>
+  <div class="north-carolina"></div>
+  <div class="west-virginia"></div>
+  <div class="ohio"></div>
+  <div class="michigan"></div>
+  <div class="pennsylvania"></div>
+  <div class="virginia"></div>
+  <div class="south-carolina"></div>
+  <div class="georgia"></div>
+  <div class="florida"></div>
+  <div class="maryland"></div>
+  <div class="dcquestionmark"></div>
+  <div class="new-jersey"></div>
+  <div class="new-york"></div>
+  <div class="massachusetts"></div>
+  <div class="connecticut"></div>
+  <div class="delaware"></div>
+  <div class="vermont"></div>
+  <div class="new-hampshire"></div>
+  <div class="maine"></div>
+  <div class="rhode-island"></div>
+  <div class="hawaii"></div>
+</div>
 
 
 <script>
