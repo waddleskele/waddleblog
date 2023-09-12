@@ -39,6 +39,77 @@ a:active {
 ::selection {
   background: #88fd0a;
 }
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
 </style>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -49,22 +120,22 @@ a:active {
 <td>
 
 <p align="left">
-<img src="logo.png" width="23" height="23">
+<a href="index.html"><img class="hvr-wobble-vertical" style="margin-top: -11px; margin-right: -10px;" src="https://i.imgur.com/HtJp46s.gif"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <font face="courier new" color="white" size="6">
-<b><a href="index.html" style="color:white">blog</a></b>
+<b><a href="blog.html" style="color:white" class="hvr-wobble-vertical">blog</a></b>
 </font>
 &nbsp;&nbsp;&nbsp;
 <font face="courier new" color="white" size="6">
-<b><a href="comic.html" style="color:white" >comics</a></b>
+<b><a href="comic.html" style="color:white" class="hvr-wobble-vertical">comics</a></b>
 </font>
 &nbsp;&nbsp;&nbsp;
 <font face="courier new" color="white" size="6">
-<b><a href="music.html" style="color:white">music</a></b>
+<b><a href="music.html" style="color:white" class="hvr-wobble-vertical">music</a></b>
 </font>
 &nbsp;&nbsp;&nbsp;
 <font style="opacity: 1" face="courier new" color="white" size="6">
-<b><a href="art.html" style="color:white">art</a></b>
+<b><a href="art.html" style="color:white" class="hvr-wobble-vertical">art</a></b>
 </font>
 </font>
 &nbsp;&nbsp;&nbsp;
