@@ -521,7 +521,13 @@ a:active {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
+* { 
+ image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+} 
 </style>
 <script type="text/javascript" src="sound-onclick.js"></script>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -1035,10 +1041,17 @@ document.getElementById("theImage").src="https://i.imgur.com/r1Ot6mB.jpg";
 </a>
 <br><br><br>
 
-<a href="javascript:playclip();">
+<script>
+function hamburger() {
+  var sound = document.getElementById("hamburger");
+  sound.load();     
+  sound.play();
+  }
+  </script>
+<a href="javascript:hamburger();">
 <img src="https://i.imgur.com/y8j6oM0.gif" width="80%" height="80%" border="0">
 </a>
-<audio>
+<audio id="hamburger">
 <source src="hamburger.mp3" type="audio/mp3">
 </audio>
 
@@ -1050,8 +1063,10 @@ document.getElementById("theImage").src="https://i.imgur.com/r1Ot6mB.jpg";
 <br><br><br>
 <a href="https://youtu.be/ywthKNqI7uI"><img src="https://i.imgur.com/2gHy0A1.gif" height="90%" width="90%"></a>
 <br><br><br><br>
+
 <img id="bigpic" src="https://i.imgur.com/OoywNEF.gif" onclick="picture()" height="90%" width="90%"/>
 <br><br><br><br>
+
 <input type="image" src="https://i.imgur.com/YLG45Q5.gif" onmouseover="this.src='https://i.imgur.com/tdCpo5X.gif'" onmouseout="this.src='https://i.imgur.com/YLG45Q5.gif'" width="90%" height="90%" id="theButton" value="click me!" onclick="donutChange()">
 <br><br><br>
 </p>

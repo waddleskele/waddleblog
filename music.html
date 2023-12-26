@@ -417,7 +417,13 @@ right: 35px;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
+* { 
+ image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+} 
 </style>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
