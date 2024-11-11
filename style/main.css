@@ -1,0 +1,204 @@
+/*links/highlight*/
+a:link {
+    color: rgb(162, 162, 162);
+}
+
+::selection {
+    background: rgb(135, 135, 135);
+}
+
+/*image formatting*/
+img {
+    width: 80%;
+    display: block;
+}
+
+img.tooTall {
+    width: 53%;
+    display: block;
+}
+
+img.tooSmall {
+    width: 100%;
+    display: block;
+}
+
+/*text styling except size*/
+@font-face {
+    font-family: Frangia;
+    src: url(font/Frangia.ttf);
+}
+
+@font-face {
+    font-family: Determination;
+    src: url(font/Determination.ttf);
+}
+
+.grid-item {
+    padding: 10px;
+    color: rgb(231, 231, 231);
+    font-family: Determination;
+    text-align: center;
+}
+
+
+
+p.tiny {
+    color: rgb(231, 231, 231);
+    font-family: Determination;
+}
+
+h1 {
+    padding: 10px;
+    color: rgb(231, 231, 231);
+    font-family: Frangia;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    color: rgb(231, 231, 231);
+    font-family: Frangia;
+    text-align: center;
+    font-weight: normal;
+}
+
+div.pageTitle {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+/*separate class to center the text vertically a bit*/
+div.centerText {
+    margin-top: 25%;
+}
+
+/*BREAKPOINT ZONE FROM HERE ON*/
+
+/*phone screen*/
+@media screen and (max-width: 650px) {
+
+    /*body bg*/
+    body {
+        background-image: url(../img/backgroundswirl5.gif);
+        background-size: 1000px 100%;
+        background-color: black;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 5em;
+    }
+
+    /*text size*/
+    .grid-item {
+        font-size: 17px;
+    }
+
+    p.tiny {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+}
+
+
+/*tablet or half of desktop screen*/
+@media screen and (max-width: 1024px) and (min-width: 651px) {
+
+
+    /*body bg*/
+    body {
+        background-image: url(../img/backgroundswirl5.gif);
+        background-size: 100vw 100%;
+        background-position: 50% 50%;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 5em;
+    }
+
+    /*text size*/
+    .grid-item {
+        font-size: 20px;
+    }
+
+    p.tiny {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+
+
+    /*body bg*/
+    body {
+        background-image: url(../img/backgroundswirl5.gif);
+        background-size: auto 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-attachment: fixed;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        padding: 5em;
+    }
+
+    /*text size*/
+    .grid-item {
+        font-size: 25px;
+    }
+
+    p.tiny {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}

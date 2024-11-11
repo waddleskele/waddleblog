@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Expression</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+</head>
+<!--end head-->
+
+
+<header>
+</header>
+
+<!--body content-->
+
+<body>
+    <!--Page title-->
+    <div class="pageTitle">
+        <h2>Virtual Art Exhibit: Sketchbook</h2>
+    </div>
+
+    <!--main content grid-->
+    <div class="grid">
+
+        <div class="grid-item">
+            <!--separate class to center the text vertically a bit-->
+            <div class="centerText">
+                <h1>'Those Sad, Tired Eyes'</h1>
+                <p>(Next Picture)</p>
+            </div>
+        </div>
+
+        <!--Image was smaller than I wanted so it gets a separate class to make it bigger-->
+        <div class="grid-item">
+            <img class="tooSmall" src="img/art1.png"
+                srcset="img/art1_150.png 150w, img/art1_300.png 300w, img/art1_600.png 600w, img/art1_800.png 800w, img/art1.png 1287w">
+        </div>
+
+        <div class="grid-item">
+            <div class="centerText">
+                <h1>'Rust's Perch'</h1>
+                <p>(Next Picture)</p>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/art2.png"
+                srcset="img/art2_150.png 150w, img/art2_300.png 300w, img/art2_600.png 600w, img/art2_800.png 800w, img/art2.png 1108w">
+        </div>
+
+        <div class="grid-item">
+            <img src="img/art3.png"
+                srcset="img/art3_150.png 150w, img/art3_300.png 300w, img/art3_600.png 600w, img/art3_800.png 800w, img/art3.png 998w">
+        </div>
+
+        <div class="grid-item">
+            <div class="centerText">
+                <h1>'Swirling Cascade'</h1>
+                <p>(Previous Picture)</p>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="centerText">
+                <h1>'Penman'</h1>
+                <p>(Next Picture)</p>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/art4.png"
+                srcset="img/art4_150.png 150w, img/art4_300.png 300w, img/art4_600.png 600w, img/art4_800.png 800w, img/art4.png 957w">
+        </div>
+
+        <!--Image was taller than I wanted so it gets a separate class to make it smaller-->
+        <div class="grid-item">
+            <img class="tooTall" src="img/art5.png"
+                srcset="img/art5_150.png 150w, img/art5_300.png 300w, img/art5_600.png 600w, img/art5.png 756w">
+        </div>
+
+    </div>
+
+
+</body>
